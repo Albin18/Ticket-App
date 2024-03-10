@@ -1,0 +1,12 @@
+<button type="button" (click)="setMostrar()" class="btn btn-primary my-3">
+  {{ mostrar == true ? "Ocultar" : "Mostrar" }}
+</button>
+<div class="card">
+  <div class="card-header">LISTA DE TECNOLOGIAS</div>
+
+  <ul class="list-group" *ngIf="mostrar == true">
+    <li class="list-group-item" *ngFor="let tecnologias of listaTecnologias">
+      {{ tecnologias }}
+    </li>
+  </ul>
+</div>
