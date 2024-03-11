@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { ClientesService } from './clientes/clientes.service';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { ClientesComponent } from './clientes/clientes.component';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, DirectivaComponent, ClientesComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Ticket-App';
