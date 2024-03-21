@@ -13,7 +13,10 @@ import { ClientesService } from './clientes/clientes.service';
   imports: [RouterOutlet, HeaderComponent, FooterComponent, DirectivaComponent, ClientesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+
+
 })
+
 export class AppComponent {
   title = 'Ticket-App';
 }
