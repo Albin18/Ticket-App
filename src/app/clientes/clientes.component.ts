@@ -13,14 +13,17 @@ import { ClientesService } from './clientes.service';
   providers:[ClientesService]
 })
 export class ClientesComponent implements OnInit {
+
 clientes: any;
 
+  constructor(private clienteService: ClientesService){
 
-
-  constructor(private clienteService: ClientesService){}
+   }
 
 ngOnInit() {
-  this.clientes = this.clienteService.getClientes()
-}
+  this.clienteService.getClientes().subscribe(
+clientes => this.clientes = clientes
+   );
+  }
 
 }
