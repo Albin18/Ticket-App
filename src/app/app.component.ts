@@ -5,12 +5,13 @@ import { FooterComponent } from './footer/footer.component';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ClientesService } from './clientes/clientes.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, DirectivaComponent, ClientesComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, DirectivaComponent, ClientesComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 
