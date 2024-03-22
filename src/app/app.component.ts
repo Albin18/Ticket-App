@@ -6,12 +6,15 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ClientesService } from './clientes/clientes.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormComponent } from './clientes/form.component';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, DirectivaComponent, ClientesComponent, HttpClientModule],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, DirectivaComponent,
+            ClientesComponent, HttpClientModule, FormComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 

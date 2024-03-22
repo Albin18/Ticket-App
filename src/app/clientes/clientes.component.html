@@ -1,7 +1,17 @@
 <div class="card border-info mb-3">
-  <div class="card-header">Lista de Usuarios</div>
+  <div class="card-header">CLIENTES</div>
   <div class="card-body">
-    <h5 class="card-title">Lista de Usuarios</h5>
+    <h5 class="card-title">Lista de Clientes</h5>
+    <div class="my-2 text-left">
+      <button
+        class="btn btn-rounded btn-primary"
+        type="button"
+        [routerLink]="['/clientes/form']"
+        routerLinkActive="router-link-active"
+      >
+        Crear Cliente
+      </button>
+    </div>
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
