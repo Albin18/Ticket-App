@@ -4,5 +4,5 @@ nombre: any;
 apellido: any;
 email: any;
 createAt: any;
-  static nombre: any;
+
 }
