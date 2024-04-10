@@ -39,7 +39,7 @@ this.activatedRoute.params.subscribe(params=>{
 
  create(): void {
  this.clientesService.create(this.cliente)
- .subscribe(cliente => {
+ .subscribe(json => {
   this.router.navigate(['/clientes'])
   swal.fire('Nuevo cliente', `Cliente creado con exito!`, 'success')
    }
@@ -47,9 +47,9 @@ this.activatedRoute.params.subscribe(params=>{
 }
 
 update():void {
-  this.clientesService.update(this.cliente).subscribe(cliente => {
+  this.clientesService.update(this.cliente).subscribe(json => {
     this.router.navigate(['/clientes'])
-    swal.fire('Cliente Actualizado', `Cliente ${cliente.nombre} actualizado con exito!`, 'success');
+    swal.fire('Cliente Actualizado', `Cliente ${json.cliente.nombre} actualizado con exito!`, 'success');
   })
 }
 

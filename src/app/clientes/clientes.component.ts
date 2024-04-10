@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-clientes',
   standalone: true,
-  imports: [CommonModule, RouterModule, FormComponent],
+  imports: [CommonModule, RouterModule],
   templateUrl: './clientes.component.html',
   styleUrl: './clientes.component.css',
   providers:[ClientesService]
